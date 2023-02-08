@@ -1,3 +1,7 @@
+li:nth-of-type(7):nth-of-type(7){
+    display: flex;
+}
+
 li:nth-of-type(7):nth-of-type(7) span{
     display: block;
     width: 20%;
