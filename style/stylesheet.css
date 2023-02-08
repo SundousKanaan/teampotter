@@ -45,7 +45,7 @@ p {
     margin-top: -1em;
 }
 
-img {
+body>img {
     width: 20em;
     position: fixed;
     bottom: .5em;
