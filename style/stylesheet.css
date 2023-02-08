@@ -50,6 +50,7 @@ img{
     position: fixed;
     bottom: .5em;
     right: .5em;
+    z-index: 1000;
 }
 
 ul{
@@ -71,4 +72,10 @@ li{
 
     border: solid .5em var(--border);
     background-color: white;
+}
+
+.groter{
+    position: fixed;
+    width: 90%;
+    height: 82%;
 }
