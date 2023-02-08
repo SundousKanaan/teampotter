@@ -13,11 +13,11 @@
 
     /* li width*/
     --width:100%;
-    --height: 15em;
+    --height: 20em;
 }
 
 body{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     
     display: grid;
@@ -39,16 +39,16 @@ h1{
     color: var(--border);
 }
 
-p{
+body > p{
     text-align: center;
     font-size: 1.2em;
     margin-top: -1em;
 }
 
-img{
-    width: 20em;
+body > img{
+    width: 30vh;
     position: fixed;
-    bottom: .5em;
+    bottom: 0;
     right: .5em;
     z-index: 1000;
 }
@@ -58,11 +58,9 @@ ul{
     height: 90%;
     list-style: none;
 
-    /* padding: 3em; */
-
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     gap: 1em;
 }
 
@@ -71,11 +69,27 @@ li{
     height: var(--height);
 
     border: solid .5em var(--border);
-    background-color: white;
+    overflow: hidden;
 }
 
-.groter{
-    position: fixed;
-    width: 90%;
-    height: 82%;
+li:hover {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    height: 75vh;
 }
+
+li{
+    position: relative;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    display: grid;
+}
+
+
+
+
+
