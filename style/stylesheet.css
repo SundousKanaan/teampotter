@@ -45,10 +45,10 @@ p{
     margin-top: -1em;
 }
 
-img{
-    width: 20em;
+body > img{
+    width: 30vh;
     position: fixed;
-    bottom: .5em;
+    bottom: 0;
     right: .5em;
     z-index: 1000;
 }
@@ -71,11 +71,24 @@ li{
     height: var(--height);
 
     border: solid .5em var(--border);
-    background-color: white;
+    overflow: hidden;
 }
 
-.groter{
-    position: fixed;
-    width: 90%;
-    height: 82%;
+li:hover {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    height: 65vh;
 }
+
+li{
+    position: relative;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    display: flex;
+}
+
+
