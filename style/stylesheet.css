@@ -13,7 +13,7 @@
 
     /* li width*/
     --width:100%;
-    --height: 15em;
+    --height: 20em;
 }
 
 body{
@@ -60,7 +60,7 @@ ul{
 
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     gap: 1em;
 }
 
