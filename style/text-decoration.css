@@ -1,0 +1,90 @@
+
+li:first-child img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+
+    filter: blur(.2em);
+}
+
+li:first-child p{
+    position: absolute;
+    z-index: 1;
+
+    font-size: 1.5em;
+
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: .5em 1.5em;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 50%);
+
+    align-self: center;
+    line-height: 1.5em;
+}
+
+li:first-child p span{
+    font-weight: bold;
+    text-decoration-skip-ink: auto;
+    text-transform: uppercase;
+    text-decoration-line:underline;
+
+    animation: text 10s linear infinite normal both;
+}
+
+@keyframes text{
+    0%{
+        color: rgb(233, 0, 0);
+        text-decoration-color: rgb(233, 0, 0);
+        text-decoration-thickness: .1em;
+        text-decoration-style: solid;
+        text-underline-offset: .3em;
+    }
+    25%{
+        color: rgb(233, 140, 0);
+        text-decoration-color: rgb(233, 140, 0);
+        text-decoration-thickness: .1em;
+        text-decoration-style: double;
+        text-underline-offset: .3em;
+    }
+    50%{
+        color: rgb(124, 233, 0);
+        text-decoration-color: rgb(124, 233, 0);
+        text-decoration-thickness: .1em;
+        text-decoration-style: dotted;
+        text-underline-offset: .3em;
+    }
+    60%{
+        color: rgb(124, 233, 0);
+        text-decoration-color: rgb(124, 233, 0);
+        text-decoration-thickness: .2em;
+        text-decoration-style: dotted;
+        text-underline-offset: .3em;
+    }
+    70%{
+        color: rgb(124, 233, 0);
+        text-decoration-color: rgb(124, 233, 0);
+        text-decoration-thickness: .1em;
+        text-decoration-style: dotted;
+        text-underline-offset: .3em;
+    }
+    75%{
+        color: rgb(0, 109, 233);
+        text-decoration-color: rgb(0, 109, 233);
+        text-decoration-thickness: .1em;
+        text-decoration-style: dashed;
+        text-underline-offset: .3em;
+    }
+    100%{
+        color: rgb(233, 0, 175);
+        text-decoration-color: rgb(233, 0, 175);
+        text-decoration-thickness: .1em;
+        text-decoration-style: wavy;
+        text-underline-offset: .3em;
+    }
+}
