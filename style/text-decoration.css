@@ -6,7 +6,24 @@ li:first-child img{
     object-fit: cover;
     object-position: center;
 
-    filter: blur(.2em);
+    filter: blur(.3em);
+}
+
+li:first-child > span{
+    width: 1.5em;
+    height: 100%;
+    position: absolute;
+    right: .2em;
+    text-align: center;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    color: white;
+
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    
+  text-underline-position: left;
 }
 
 li:first-child p{
