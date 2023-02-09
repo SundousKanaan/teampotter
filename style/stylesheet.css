@@ -45,7 +45,7 @@ p {
     margin-top: -1em;
 }
 
-body>img {
+body > img {
     width: 20em;
     position: fixed;
     bottom: .5em;
@@ -74,8 +74,19 @@ li {
     background-color: white;
 }
 
-.groter {
-    position: fixed;
-    width: 90%;
-    height: 82%;
+
+li input[type="checkbox"]{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    z-index: 100;
+}
+
+li:has(input[type="checkbox"]:checked) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    height: 75vh;
 }
