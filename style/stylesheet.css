@@ -6,20 +6,20 @@
     padding: 0;
 }
 
-:root {
+:root{
     --background: rgb(255, 244, 219);
     --border: rgb(138, 58, 4);
-
+    
 
     /* li width*/
-    --width: 100%;
-    --height: 15em;
+    --width:100%;
+    --height: 20em;
 }
 
-body {
-    width: 100vw;
+body{
+    width: 99vw;
     height: 100vh;
-
+    
     display: grid;
     grid-template-rows: 10em auto;
     align-items: center;
@@ -28,52 +28,59 @@ body {
     background-color: var(--background);
 }
 
-div {
+div{
     align-self: center;
 }
 
-h1 {
+h1{
     font-family: 'Harry Potter', sans-serif;
     font-size: 4em;
-    align-self: end;
+    align-self:end;
     color: var(--border);
 }
 
-p {
+body div p{
     text-align: center;
     font-size: 1.2em;
     margin-top: -1em;
 }
 
-body > img {
-    width: 20em;
+body > img{
+    width: 30vh;
     position: fixed;
-    bottom: .5em;
+    bottom: 0;
     right: .5em;
     z-index: 1000;
 }
 
-ul {
+ul{
     width: 90%;
     height: 90%;
     list-style: none;
 
-    /* padding: 3em; */
-
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     gap: 1em;
 }
 
-li {
+li{
     width: var(--width);
     height: var(--height);
 
     border: solid .5em var(--border);
-    background-color: white;
+    overflow: hidden;
 }
 
+li{
+    position: relative;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    display: grid;
+}
 
 li input[type="checkbox"]{
     width: 2em;
@@ -90,3 +97,7 @@ li:has(input[type="checkbox"]:checked) {
 
     height: 75vh;
 }
+
+
+
+
