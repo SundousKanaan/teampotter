@@ -74,6 +74,8 @@ li{
     transition: .5s;
 
     display: grid;
+    
+    box-shadow: .3em .3em .5em rgba(0 , 0 , 0 , 30%);
 }
 
 li input[type="checkbox"]{
