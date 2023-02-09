@@ -1,8 +1,4 @@
-li:nth-child(2):hover {
-    position: absolute;
-    width: 90vw;
-    height: 82vh;
-}
+
 
 li:nth-child(2) {
     display: flex;
