@@ -5,8 +5,27 @@ li:nth-child(8) img{
     object-fit: cover;
     object-position: center;
 
-    -webkit-mask-image:
-    linear-gradient(red, transparent),
-    repeating-linear-gradient(90deg, red, red 1em , transparent 0, transparent 4em);
-    -webkit-mask-composite: source-out;
+    animation: mask 3s linear infinite both;
+}
+
+@keyframes mask{
+    0%{
+        -webkit-mask-image:
+        linear-gradient(red, transparent),
+        repeating-linear-gradient(90deg, red, red 2em , transparent 0, transparent 5em);
+        -webkit-mask-composite: source-in;
+    }
+    50%{
+        -webkit-mask-image:
+        linear-gradient(red, transparent),
+        repeating-linear-gradient(90deg, red, red 2em , transparent 0, transparent 5em);
+        -webkit-mask-composite: source-out;
+    }
+    100%{
+        -webkit-mask-image:
+        linear-gradient(transparent, red),
+        repeating-linear-gradient(145deg, red, red 2em , transparent 0, transparent 4em),
+        repeating-linear-gradient(-145deg, red, red 2em , transparent 0, transparent 4em);
+        -webkit-mask-composite: destination-over;
+    }
 }
