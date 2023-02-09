@@ -70,14 +70,8 @@ li{
 
     border: solid .5em var(--border);
     overflow: hidden;
-}
-
-li{
     position: relative;
-
     transition: .5s;
-
-    cursor: pointer;
 
     display: grid;
 }
